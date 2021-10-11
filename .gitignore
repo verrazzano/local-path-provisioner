@@ -1,6 +1,6 @@
 /.dapper
 /.cache
-/bin
+/package/bin
 /dist
 *.swp
 .idea
