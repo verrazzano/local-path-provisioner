@@ -19,7 +19,8 @@ RUN yum update -y && \
 
 RUN yum -y install oracle-golang-release-el7 && \
    	yum-config-manager --enable ol7_developer_golang116 && \
-    yum -y install golang-1.16
+    yum -y install golang-1.16 && \
+    yum clean all
 
 ENV DAPPER_ENV REPO TAG DRONE_TAG
 ENV DAPPER_SOURCE /go/src/github.com/rancher/local-path-provisioner/
